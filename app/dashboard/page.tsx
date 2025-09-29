@@ -3,6 +3,10 @@ import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue, fetchLatestInvoices, fetchCardData} from '@/app/lib/data';
+
+export const dynamic = "force-dynamic"; 
+// fuerza a Next.js a renderizar en runtime y no en build
+
  
 export default async function Page() {
 
