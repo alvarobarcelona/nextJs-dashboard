@@ -1,5 +1,10 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
- 
+
+export const experimental_ppr = true;
+
+/* The great thing about Partial Prerendering is that you don't need to change your code to use it. As long as you're using Suspense to wrap the dynamic 
+parts of your route, Next.js will know which parts of your route are static and which are dynamic. */
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
