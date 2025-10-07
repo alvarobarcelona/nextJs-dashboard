@@ -3,6 +3,7 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
 
 export const dynamic = "force-dynamic";
+// fuerza a Next.js a renderizar en runtime y no en build
 
  
 export default async function Page() {
