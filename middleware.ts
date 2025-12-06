@@ -1,7 +1,10 @@
-import NextAuth from "next-auth";
-import { authConfig } from "./auth.config";
+import { NextRequest, NextResponse } from "next/server";
 
-export default NextAuth(authConfig).auth;
+export function middleware(request: NextRequest) {
+  // Simple middleware that just passes through
+  // Authentication is handled by the auth.ts on the server side
+  return NextResponse.next();
+}
 
 export const config = {
   // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
