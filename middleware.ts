@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// Force Vercel to rebuild - v2
 export function middleware(request: NextRequest) {
   // Simple middleware that just passes through
   // Authentication is handled by the auth.ts on the server side
